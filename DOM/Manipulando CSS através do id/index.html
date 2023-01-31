@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+      .box{
+        width: 200px;
+        height: 200px;
+        background-color: royalblue;
+        margin-left: 0;
+      }
+      .animEsquerda{
+        transition: 1s;
+        margin-left: 1000px;
+      }
+    </style>
+    <div class="box"></div>
+    <script>    
+        let box = document.querySelectorAll('.box')[0]
+        /*
+        setTimeout(()=>{
+            box.classList.add('animEsquerda')
+        },1000)
+        */
+        box.addEventListener('click',()=>{
+          box.classList.add('animEsquerda')
+        })
+        
+    </script>
+</body>
+</html>
