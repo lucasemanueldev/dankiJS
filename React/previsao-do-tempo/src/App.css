@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.search{
+  background-color: rebeccapurple;
+  padding: 10px;
+  text-align: center;
+}
+
+.search h3{
+  color: aliceblue;
+  padding: 10px;
+}
+
+.search input[type=text]{
+  width: 80%;
+  height: 40%;
+  padding-left: 20px;
+}
+
+.search input[type=submit]{
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: 2px solid #333;
+  background-color: #ddd;
+  font-size: 10px;
+  cursor: pointer;
+}
