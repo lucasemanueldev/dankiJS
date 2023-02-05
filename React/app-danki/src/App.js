@@ -1,59 +1,33 @@
-/*
 import './App.css';
-import Header from './Header';
-
-function App() {
-  return (
-    <div className="App">
-    <h1>Meu App</h1>
-    <Header />
-    </div>
-  );
-}
-*/
-
 import React, { useState, useEffect } from 'react';
 
 
 
 function App() {
-  /*
-  // Declare uma nova variável de state, a qual chamaremos de "count"
+ 
+  const [hora, setHora] = useState(22);
+  const [minutos, setMinutos] = useState(40);
+  const [segundos, setSegundos] = useState(0)
 
-  const [count, setCount] = useState(0);
-
-  useEffect(())
-
-  return (
-
-    <div>
-
-      <p>You clicked {count} times</p>
-
-      <button onClick={() => setCount(count + 1)}>
-
-        Click me
-
-      </button>
-
-    </div>
-
-  );
-  */
-  const [count, setCount] = useState(0);
-
-  // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
-    // Update the document title using the browser API
-    document.title = `You clicked ${count} times`;
+      const interval = setInterval(() => {
+        setSegundos(segundos +1)
+        if(segundos == 60){
+          setSegundos(0)
+          setMinutos(minutos+1)
+          if(minutos == 60){
+            setMinutos(0)
+            setHora(hora+1)
+          }
+        }
+      },1000)
+
+      return () => clearInterval(interval);
   });
 
   return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+    <div className='relogio'>
+    <h2>{hora}:{minutos}:{segundos}</h2>
     </div>
   );
 
