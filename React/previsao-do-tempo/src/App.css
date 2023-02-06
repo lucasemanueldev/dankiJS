@@ -5,7 +5,7 @@
 }
 
 .search{
-  background-color: rebeccapurple;
+  background-color: rgb(56, 14, 98);
   padding: 10px;
   text-align: center;
 }
@@ -28,4 +28,14 @@
   background-color: #ddd;
   font-size: 10px;
   cursor: pointer;
+}
+
+.dados{
+  text-align: center;
+  margin-top: 45px;
+  color: rgb(36, 0, 133);
+}
+
+.dados p{
+  margin-top: 20px;
 }
