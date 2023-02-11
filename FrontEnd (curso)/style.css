@@ -70,3 +70,114 @@ section.main{
 .mockup img{
     max-width: 100%;
 }
+
+section.marcas{
+    padding: 100px 0;
+}
+
+section.marcas img{
+    width: calc(100% / 5);
+}
+
+section.pq-nos{
+    padding: 40px 0;
+    background-color: #fbfcfe;
+}
+
+section.pq-nos > .center > h2{
+    font-size: 64px;
+    text-align: center;
+    width: 100%;
+}
+
+section.pq-nos > .center{
+    max-width: 1280px;
+}
+
+section.pq-nos > .center > p{
+    font-size: 14px;
+    color: #ccc;
+    text-align: center;
+    width: 100%;
+}
+
+.diferenciais{
+    display: flex;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.box-diferenciais{
+    box-shadow: 0px 20px 40px #2426721c;
+    width: 31%;
+    margin-right: 2%;
+    padding: 10px 20px;
+}
+
+.box-diferenciais h3{
+    font-size: 28px;
+    color: black;
+    margin: 20px 0;
+}
+
+.box-diferenciais p{
+    font-size: 13px;
+    color: #7e92ac;
+    margin-bottom: 20px;
+
+}
+
+section.cta{
+    background-image: url(/images/banner_meio.svg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10;
+    min-height: 200px;
+    color: white;
+    text-align: center;
+}
+
+section.cta h2,
+section.cta h4{
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+section.cta h2{
+    font-size: 40px;
+}
+
+section.cta a{
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 7px;
+    font-weight: bold;
+    background: #fd3;
+    text-decoration: none;
+    color: #0f3fd3;
+}
+
+@media screen and (max-width: 768px){
+
+    .diferenciais{
+        flex-wrap: wrap;
+    }
+
+    .box-diferenciais{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    section.marcas > .center{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.marcas img{
+        width: 100%;
+        max-width: 100%;
+    }
+    
+}
+
